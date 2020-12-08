@@ -1,0 +1,122 @@
+a {
+  text-decoration: none;
+}
+.black-box-link {
+  color: white;
+}
+.black-box-link:visited{
+  color: white;
+}
+.black-box-link:hover {
+  color: wheat;
+}
+
+.white-box-link {
+  color: black;
+}
+.white-box-link:visited{
+  color: black;
+}
+.white-box-link:hover {
+  color: #0A214C;
+}
+
+
+#navigation {
+  background-color: white;
+  margin-top: 3%;
+}
+
+.nav-item {
+  padding: 0 35px;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.title {
+  font-family: "Bungee", cursive;
+}
+
+.title-desc,
+.title-desc2 {
+  padding: 4% 0;
+}
+
+.social-icons {
+  position: relative;
+  transform: rotate(90deg);
+  left: -650px;
+  top: 450px;
+}
+
+.fab {
+  padding: 5px;
+  transform: rotate(-90deg);
+  color: black;
+}
+
+.box1,
+.box3 {
+  border-radius: 50px;
+  background-color: #000000;
+}
+
+.box1, .box3 {
+  position: relative;
+  left: 70px;
+  margin: 10px 5px;
+}
+
+.box2 {
+  border-radius: 50px;
+  background-color: #fdfcfa;
+  position: relative;
+  left: -113px;
+  margin: 100px 5px;
+}
+
+.box1-info,
+.box3-info{
+  text-align: center;
+  color: white;
+}
+.box2-info {
+  text-align: center;
+}
+
+.box1-info p,
+.box3-info p {
+  color: grey;
+  font-weight: lighter;
+}
+
+.music-icon {
+  padding: 7%;
+}
+
+.mic-div {
+  text-align: center;
+}
+
+.mic-img, .cric-img {
+  border-radius: 50px;
+}
+
+.box2 .cric-img {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 780px) {
+  .kendrick {
+    visibility: hidden;
+  }
+
+  .mic-img {
+    visibility: hidden;
+  }
+}
+
+
+/*# sourceMappingURL=/style.493e6e98.css.map */

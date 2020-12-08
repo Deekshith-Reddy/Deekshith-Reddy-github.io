@@ -1,0 +1,69 @@
+body,
+html {
+  height: 100%;
+  background-color: #e32636;
+}
+
+.navbar {
+  padding: 1% 2%;
+}
+
+.main-bg {
+  /* The image used */
+  background-image: url("../images/music-bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote {
+  text-align: center;
+  font-family: "Sansita Swashed", cursive;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  font-weight: 300;
+  color: #e32636;
+}
+.quote:hover {
+  color: white;
+  font-weight: 900;
+}
+
+.heading {
+  position: relative;
+  padding: 1.5% 0;
+  color: white;
+}
+hr {
+  border-top: 1px solid white;
+}
+
+.card-collection {
+  position: relative;
+  padding: 2% 0;
+}
+
+.card {
+  text-align: center;
+  border: none;
+  background-color: #e32636;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.02);
+
+  color: white;
+}
+.artist-card-img {
+  margin: auto;
+  border-radius: 20px;
+  padding: 1% 0;
+}
+
+.btn-dark {
+  background-color: black;
+}
