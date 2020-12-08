@@ -4,7 +4,7 @@ a {
 .black-box-link {
   color: white;
 }
-.black-box-link:visited{
+.black-box-link:visited {
   color: white;
 }
 .black-box-link:hover {
@@ -14,98 +14,100 @@ a {
 .white-box-link {
   color: black;
 }
-.white-box-link:visited{
+.white-box-link:visited {
   color: black;
 }
 .white-box-link:hover {
-  color: #0A214C;
+  color: #0a214c;
 }
-
-
-#navigation {
-  background-color: white;
-  margin-top: 3%;
-}
-
-.nav-item {
-  padding: 0 35px;
-}
-
-.jumbotron {
-  background-color: white;
-}
-
 .title {
   font-family: "Bungee", cursive;
 }
 
-.title-desc,
-.title-desc2 {
-  padding: 4% 0;
-}
+@media (min-width: 780px) {
+  #navigation {
+    background-color: white;
+    margin-top: 3%;
+  }
 
-.social-icons {
-  position: relative;
-  transform: rotate(90deg);
-  left: -650px;
-  top: 450px;
-}
+  .nav-item {
+    padding: 0 35px;
+  }
 
-.fab {
-  padding: 5px;
-  transform: rotate(-90deg);
-  color: black;
-}
+  .jumbotron {
+    background-color: white;
+  }
 
-.box1,
-.box3 {
-  border-radius: 50px;
-  background-color: #000000;
-}
+  .title-desc,
+  .title-desc2 {
+    padding: 4% 0;
+  }
 
-.box1, .box3 {
-  position: relative;
-  left: 70px;
-  margin: 10px 5px;
-}
+  .social-icons {
+    position: relative;
+    transform: rotate(90deg);
+    left: -650px;
+    top: 450px;
+  }
 
-.box2 {
-  border-radius: 50px;
-  background-color: #fdfcfa;
-  position: relative;
-  left: -113px;
-  margin: 100px 5px;
-}
+  .fab {
+    padding: 5px;
+    transform: rotate(-90deg);
+    color: black;
+  }
 
-.box1-info,
-.box3-info{
-  text-align: center;
-  color: white;
-}
-.box2-info {
-  text-align: center;
-}
+  .box1,
+  .box3 {
+    border-radius: 50px;
+    background-color: #000000;
+  }
 
-.box1-info p,
-.box3-info p {
-  color: grey;
-  font-weight: lighter;
-}
+  .box1,
+  .box3 {
+    position: relative;
+    left: 70px;
+    margin: 10px 5px;
+  }
 
-.music-icon {
-  padding: 7%;
-}
+  .box2 {
+    border-radius: 50px;
+    background-color: #fdfcfa;
+    position: relative;
+    left: -113px;
+    margin: 100px 5px;
+  }
 
-.mic-div {
-  text-align: center;
-}
+  .box1-info,
+  .box3-info {
+    text-align: center;
+    color: white;
+  }
+  .box2-info {
+    text-align: center;
+  }
 
-.mic-img, .cric-img {
-  border-radius: 50px;
-}
+  .box1-info p,
+  .box3-info p {
+    color: grey;
+    font-weight: lighter;
+  }
 
-.box2 .cric-img {
-  transform: rotateY(180deg);
+  .music-icon {
+    padding: 7%;
+  }
+
+  .mic-div {
+    text-align: center;
+  }
+
+  .mic-img,
+  .cric-img {
+    border-radius: 50px;
+  }
+
+  .box2 .cric-img {
+    transform: rotateY(180deg);
+  }
 }
 
 @media (max-width: 780px) {
@@ -113,7 +115,53 @@ a {
     visibility: hidden;
   }
 
-  .mic-img {
-    visibility: hidden;
+  .social-icons {
+    padding: 2% 0;
+  }
+
+  .title {
+    font-size: 300%;
+  }
+
+  .fab {
+    padding: 5px;
+    font-size: xx-large;
+    color: black;
+  }
+
+  .box1,
+  .box3 {
+    background-color: #000000;
+  }
+
+  .box2 {
+    background-color: #fdfcfa;
+  }
+
+  .box1-info,
+  .box3-info {
+    text-align: center;
+    color: white;
+  }
+  .box2-info {
+    text-align: center;
+  }
+
+  .box1-info p,
+  .box3-info p {
+    color: grey;
+    font-weight: lighter;
+  }
+
+  .mic-img,
+  .cric-img,
+  .mov-img {
+    border-radius: 50px;
+    position: relative;
+    margin: 0 22%;
+  }
+
+  .box2 .cric-img {
+    transform: rotateY(180deg);
   }
 }
