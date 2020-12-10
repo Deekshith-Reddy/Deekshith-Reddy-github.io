@@ -1,8 +1,8 @@
 var canvas = document.getElementById("tutorial");
 var ctx = canvas.getContext('2d');
-const { lerp } = require('canvas-sketch-util/math');
-const random = require('canvas-sketch-util/random');
-const palettes = require('nice-color-palettes');
+var { lerp } = require('canvas-sketch-util/math');
+var random = require('canvas-sketch-util/random');
+var palettes = require('nice-color-palettes');
 
 const palette = random.shuffle(random.pick(palettes)).slice(1, 6);
 
