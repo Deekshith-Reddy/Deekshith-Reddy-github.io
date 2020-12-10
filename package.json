@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas-sketch-util": "^1.10.0",
+    "nice-color-palettes": "^3.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
