@@ -112,6 +112,10 @@ a {
 }
 
 @media (max-width: 780px) {
+  body {
+    width: min-content;
+  }
+
   .kendrick {
     visibility: hidden;
   }
@@ -167,8 +171,9 @@ a {
   }
 
   #tutorial {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
+    position: relative;
   }
 }
 
