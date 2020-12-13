@@ -117,12 +117,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"style/music.css":[function(require,module,exports) {
+})({"style/movies.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\music-bg.jpg":[["music-bg.19577c4d.jpg","images/music-bg.jpg"],"images/music-bg.jpg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -466,4 +466,4 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("node_modules/parcel/src/builtins/bundle-loader.js");b.register("js",require("node_modules/parcel/src/builtins/loaders/browser/js-loader.js"));b.load([]);
 },{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js",0], null)
-//# sourceMappingURL=/music.434c84fb.js.map
+//# sourceMappingURL=/movies.d40a2feb.js.map
