@@ -1,6 +1,8 @@
 body,
 html {
   height: 100%;
+  font-family: "Gloria Hallelujah", cursive;
+  scroll-behavior: smooth;
 }
 .main-bg {
   /* The image used */
@@ -15,6 +17,10 @@ html {
   background-size: cover;
 }
 
+.navbar-brand {
+  padding: 1% 2%;
+}
+
 .heading {
   position: relative;
   z-index: 1;
@@ -22,7 +28,6 @@ html {
   top: 77%;
   font-family: "Bangers", cursive;
   font-size: 120px;
-  /* font-family: 'Gloria Hallelujah', cursive; */
 }
 
 #canva-art {
@@ -30,6 +35,38 @@ html {
   padding: 0% 3% 7%;
   width: 100%;
   height: 100%;
+}
+
+/* MAIN CONTENT SECTION */
+.btn {
+  background-color: white;
+  font-size: 30px;
+}
+
+.fav-movie-cards,
+.fav-director-cards,
+.underrated-movie-cards,
+.classics-cards {
+  margin-top: 5%;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+h3 {
+  margin-top: 5%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card-img-top {
+  border-bottom: 0.5px solid gainsboro;
 }
 
 /* FOOTER SECTION */

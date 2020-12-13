@@ -1361,6 +1361,8 @@ canvas.height = canvas.clientHeight;
 var ctx = canvas.getContext('2d');
 var palette = random.shuffle(random.pick(palettes)).slice(0, 5);
 document.querySelector('.heading').style.color = palette[1];
+$(".btn").css("color", palette[1]);
+$(".btn").css("border", "1px solid black");
 
 var createGrid = function createGrid() {
   var points = [];
@@ -1433,7 +1435,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55574" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50886" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

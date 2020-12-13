@@ -44,11 +44,21 @@ a {
     padding: 4% 0;
   }
 
-  .social-icons {
-    position: relative;
-    transform: rotate(90deg);
+  .social-icons,
+  .box1 {
+    /* position: relative;
+    
     left: -650px;
-    top: 450px;
+    top: 450px; */
+    display: inline-block;
+    vertical-align: top;
+  }
+  .social-icons {
+    transform: rotate(90deg);
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    display: flex;
   }
 
   .fab {

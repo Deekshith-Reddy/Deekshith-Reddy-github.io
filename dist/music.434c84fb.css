@@ -4,6 +4,10 @@ html {
   background-color: #e32636;
 }
 
+iframe {
+  padding: 3%;
+}
+
 a {
   color: white;
 }

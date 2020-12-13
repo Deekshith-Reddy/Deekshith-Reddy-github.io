@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VKWJ1K2RP2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VKWJ1K2RP2");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -17,22 +31,238 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Josefin+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Movies</title>
     <link rel="stylesheet" href="./style/movies.css" />
   </head>
   <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">HOME</a>
+    </nav>
     <div class="main-bg">
       <canvas id="canva-art"></canvas>
       <h1 class="heading">Movies</h1>
     </div>
+    <br />
+    <hr />
+    <br />
 
-    <br />
-    <br />
-    <br />
-    <br />
+    <!-- MIDDLE SECTION  -->
+    <div class="container">
+      <h2>What Do I Watch</h2>
+      <hr />
+      <h3>My favorite Movies</h3>
+      <div class="row fav-movie-cards">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/birdman.jpg"
+              class="card-img-top"
+              height="425"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Birdman</h5>
+              <p class="card-text">
+                A washed-up superhero actor attempts to revive his fading career
+                by writing, directing, and starring in a Broadway production.
+                <br /><br /><br />
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt2562232/?ref_=rt_li_tt"
+                class="btn btn-primary"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/inglourious.jpg"
+              class="card-img-top"
+              height="425"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Inglourious Basterds</h5>
+              <p class="card-text">
+                In Nazi-occupied France during World War II, a plan to
+                assassinate Nazi leaders by a group of Jewish U.S. soldiers
+                coincides with a theatre owner's vengeful plans for the same.
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt0361748/?ref_=rt_li_tt"
+                class="btn btn-primary"
+                >Check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/sixth_sense.jpg"
+              class="card-img-top"
+              height="425"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Sixth Sense</h5>
+              <p class="card-text">
+                A boy who communicates with spirits seeks the help of a
+                disheartened child psychologist.
+                <br /><br /><br /><br /><br />
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt0167404/?ref_=rt_li_ttmd-"
+                class="btn btn-primary"
+                >Check</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>My favorite Directors</h3>
+      <div class="row fav-director-cards">
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/christopher_nolan.jpg"
+              class="card-img-top"
+              alt="..."
+              height="425"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Christopher Nolan</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">yeah</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/quentin.jpg"
+              class="card-img-top"
+              alt="..."
+              height="425"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quentin Tarantino</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">yeah</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/denis.jpg"
+              class="card-img-top"
+              alt="..."
+              height="425"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Denis Villeneuve</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Underrated Movies</h3>
+      <div class="row underrated-movie-cards">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/end-of-watch.jpg"
+              class="card-img-top"
+              height="250px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">End of Watch</h5>
+              <p class="card-text">
+                Shot documentary-style, this film follows the daily grind of two
+                young police officers in LA who are partners and friends, and
+                what happens when they meet criminal forces greater than
+                themselves.
+              </p>
+              <br />
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/enemy.jpg"
+              class="card-img-top"
+              height="250px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Enemy</h5>
+              <p class="card-text">
+                Adam, a college professor, spots an actor in a movie who looks
+                exactly like him. Adam tracks down his doppelganger and starts
+                living his life secretly, which gives birth to a complex
+                situation.
+              </p>
+              <br />
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/unbreakable.jpg"
+              class="card-img-top"
+              height="250px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unbreakable</h5>
+              <p class="card-text">
+                David, a security guard, survives a fatal train accident, only
+                to be tracked down by a man named Elijah Price, who claims that
+                David is blessed with superhuman abilities.
+              </p>
+              <br />
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Classics</h3>
+      <div class="row classics-cards">
+        <div class="col-md-3">SOme</div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">SOme</div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">Some</div>
+      </div>
+    </div>
 
     <!-- FOOTER SECTION -->
 

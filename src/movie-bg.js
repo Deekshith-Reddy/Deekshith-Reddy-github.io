@@ -8,6 +8,11 @@ var ctx = canvas.getContext('2d')
 
 const palette = random.shuffle(random.pick(palettes)).slice(0,5);
 document.querySelector('.heading').style.color = palette[1];
+
+$(".btn").css("color",palette[1])
+
+$(".btn").css("border","1px solid black")
+
 const createGrid = () => {
     const points = [];
     const count = 5;
