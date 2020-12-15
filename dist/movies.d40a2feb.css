@@ -4,6 +4,19 @@ html {
   font-family: "Gloria Hallelujah", cursive;
   scroll-behavior: smooth;
 }
+
+a {
+  color: white;
+}
+.info {
+  margin: 5% 0% 0%;
+}
+.info p {
+  padding: 3% 15%;
+  font-weight: bold;
+  margin: 15% 0 0;
+  font-family: "Montserrat", sans-serif;
+}
 .main-bg {
   /* The image used */
   background-color: white;
@@ -16,7 +29,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 .navbar-brand {
   padding: 1% 2%;
 }
@@ -25,7 +42,7 @@ html {
   position: relative;
   z-index: 1;
   left: 40%;
-  top: 77%;
+  top: 72%;
   font-family: "Bangers", cursive;
   font-size: 120px;
 }
@@ -35,18 +52,24 @@ html {
   padding: 0% 3% 7%;
   width: 100%;
   height: 100%;
+  top: -0.5px;
+}
+
+#canva-art2 {
+  position: absolute;
+  width: 73%;
+  z-index: -1;
 }
 
 /* MAIN CONTENT SECTION */
-.btn {
-  background-color: white;
-  font-size: 30px;
-}
 
 .fav-movie-cards,
 .fav-director-cards,
 .underrated-movie-cards,
-.classics-cards {
+.classics-cards,
+.foreign-cards,
+.weirdly-great-cards,
+.documentary-cards {
   margin-top: 5%;
 }
 h2 {
@@ -79,6 +102,45 @@ h3 {
 
 .social-icon {
   margin: 20px 10px;
+}
+
+@media (max-width: 768px) {
+  .main-bg {
+    /* The image used */
+    background-color: white;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #canva-art {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 15%;
+  }
+
+  .heading {
+    position: relative;
+    z-index: 1;
+    font-family: "Bangers", cursive;
+    left: 16%;
+    top: 60%;
+    font-size: 100px;
+  }
+
+  .card {
+    margin: 2%;
+  }
+
+  .container {
+    margin: 8%;
+  }
 }
 
 

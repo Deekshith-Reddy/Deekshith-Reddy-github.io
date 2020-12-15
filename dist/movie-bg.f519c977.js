@@ -1359,14 +1359,19 @@ var canvas = document.getElementById("canva-art");
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 var ctx = canvas.getContext('2d');
+var canvas2 = document.getElementById("canva-art2");
+canvas2.width = canvas2.clientWidth;
+canvas2.height = canvas2.clientHeight;
+var ctx2 = canvas2.getContext('2d');
 var palette = random.shuffle(random.pick(palettes)).slice(0, 5);
 document.querySelector('.heading').style.color = palette[1];
-$(".btn").css("color", palette[1]);
+$(".btn").css("backgroundColor", "black");
+$(".btn").css("color", 'white');
 $(".btn").css("border", "1px solid black");
 
-var createGrid = function createGrid() {
+var createGrid = function createGrid(counter) {
   var points = [];
-  var count = 5;
+  var count = counter;
 
   for (var i = 0; i < count; i++) {
     for (var j = 0; j < count; j++) {
@@ -1382,8 +1387,8 @@ var createGrid = function createGrid() {
   return points;
 };
 
-var points = createGrid();
-var margin = 100;
+var points = createGrid(5);
+var margin = 30;
 var width = canvas.offsetWidth;
 var height = canvas.offsetHeight;
 console.log(width, height);
@@ -1406,6 +1411,30 @@ points.forEach(function (data) {
 
   ctx.fillStyle = color;
   ctx.fill();
+});
+var points2 = createGrid(30);
+var margin2 = 50;
+var width2 = canvas2.offsetWidth;
+var height2 = canvas2.offsetHeight;
+console.log(width2, height2);
+ctx2.globalAlpha = 0.5;
+points2.forEach(function (data2) {
+  var position2 = data2.position;
+  var color2 = data2.color;
+
+  var _position2 = _slicedToArray(position2, 2),
+      u2 = _position2[0],
+      v2 = _position2[1];
+
+  var x2 = lerp(margin2, width2 - margin2, u2);
+  var y2 = lerp(margin2, height2 - margin2, v2);
+
+  if (random.chance(0.75)) {
+    ctx2.beginPath();
+    ctx2.arc(x2, y2, random.range(10, 200), 0, Math.PI * 2);
+    ctx2.fillStyle = color2;
+    ctx2.fill();
+  }
 });
 },{"canvas-sketch-util/math":"node_modules/canvas-sketch-util/math.js","canvas-sketch-util/random":"node_modules/canvas-sketch-util/random.js","nice-color-palettes/500.json":"node_modules/nice-color-palettes/500.json"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1435,7 +1464,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50886" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60481" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

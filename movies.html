@@ -4,7 +4,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VKWJ1K2RP2"
+      src="https://www.googletagmanager.com/gtag/js?id=G-WBSG4G59F4"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,7 +13,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-VKWJ1K2RP2");
+      gtag("config", "G-WBSG4G59F4");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,13 +34,17 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Josefin+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Movies</title>
     <link rel="stylesheet" href="./style/movies.css" />
   </head>
   <body>
     <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">HOME</a>
     </nav>
     <div class="main-bg">
@@ -75,6 +79,7 @@
               <a
                 href="https://www.imdb.com/title/tt2562232/?ref_=rt_li_tt"
                 class="btn btn-primary"
+                target="_blank"
                 >check</a
               >
             </div>
@@ -98,6 +103,7 @@
               <a
                 href="https://www.imdb.com/title/tt0361748/?ref_=rt_li_tt"
                 class="btn btn-primary"
+                target="_blank"
                 >Check</a
               >
             </div>
@@ -121,6 +127,7 @@
               <a
                 href="https://www.imdb.com/title/tt0167404/?ref_=rt_li_ttmd-"
                 class="btn btn-primary"
+                target="_blank"
                 >Check</a
               >
             </div>
@@ -130,7 +137,7 @@
 
       <h3>My favorite Directors</h3>
       <div class="row fav-director-cards">
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <img
               src="images/christopher_nolan.jpg"
@@ -144,12 +151,17 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">yeah</a>
+              <a
+                href="https://www.imdb.com/name/nm0634240/?ref_=nv_sr_srsg_0"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <img
               src="images/quentin.jpg"
@@ -163,12 +175,17 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">yeah</a>
+              <a
+                href="https://www.imdb.com/name/nm0000233/?ref_=nv_sr_srsg_0"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <img
               src="images/denis.jpg"
@@ -182,7 +199,12 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://www.imdb.com/name/nm0898288/?ref_=nv_sr_srsg_0"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
@@ -206,7 +228,12 @@
                 themselves.
               </p>
               <br />
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://www.imdb.com/title/tt1855199/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
@@ -228,7 +255,12 @@
                 situation.
               </p>
               <br />
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://www.imdb.com/title/tt2316411/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
@@ -249,19 +281,338 @@
                 David is blessed with superhuman abilities.
               </p>
               <br />
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://www.hotstar.com/in/movies/unbreakable/1260017867/watch?utm_source=gwa"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
             </div>
           </div>
         </div>
       </div>
+      <div class="info">
+        <hr />
+        <canvas id="canva-art2"></canvas>
+        <p>
+          Here you can see that I am crazy about movies, you can contact me if
+          you want to talk to me about the great art in detail, you can contact
+          me anytime. Or if you have any good movies for me to watch, or if this
+          list contradicts with yours.
+        </p>
+        <hr />
+      </div>
       <h3>Classics</h3>
       <div class="row classics-cards">
-        <div class="col-md-3">SOme</div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/schindlers.jpg"
+              height="450"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Schindler's List</h5>
+              <p class="card-text">
+                <br />
+                Oskar Schindler, a German industrialist and member of the Nazi
+                party, tries to save his Jewish employees after witnessing the
+                persecution of Jews in Poland.
+                <br /><br /><br />
+              </p>
+              <a
+                href="https://www.netflix.com/in/title/60036359?source=35"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="col-md-1"></div>
-        <div class="col-md-3">SOme</div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/taxidriver.jpg"
+              height="450"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Taxi Driver</h5>
+              <p class="card-text">
+                <br />
+                Travis, an ex-marine and Vietnam veteran, works as a taxi driver
+                in New York City. One day, he is driven to save an underage
+                prostitute from her pimp in an effort to clean the city of its
+                corruption.
+                <br /><br />
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt0075314/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="col-md-1"></div>
-        <div class="col-md-3">Some</div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/shawshank.jpg"
+              height="450"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Shawshank Redemption</h5>
+              <p class="card-text">
+                Andy Dufresne, a successful banker, is arrested for the murders
+                of his wife and her lover, and is sentenced to life imprisonment
+                at the Shawshank prison. He becomes the most unconventional
+                prisoner.
+              </p>
+              <a
+                href="https://www.primevideo.com/dp/amzn1.dv.gti.46ba7ecc-0770-ff51-7459-06c4e66d8630?autoplay=1&ref_=atv_cf_strg_wb"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+      <h3>Foreign Language</h3>
+      <div class="row foreign-cards">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/parasite.jpg"
+              height="330"
+              width="280"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Parasite</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="https://www.primevideo.com/dp/amzn1.dv.gti.3eb85fb1-6cb3-1c67-b86a-38dfbce28c23?autoplay=1&ref_=atv_cf_strg_wb"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/the hunt.jpg"
+              height="330"
+              width="280"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Hunt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt2106476/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="images/traintobusan.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Train to Busan</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="https://www.primevideo.com/dp/amzn1.dv.gti.02babd68-d256-8ff4-3b98-f2f2fbe689bc?autoplay=1&ref_=atv_cf_strg_wb"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Weirdly Great</h3>
+      <div class="row weirdly-great-cards">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/grand-budapest.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Grand Budapest Hotel</h5>
+              <p class="card-text">
+                Gustave H, a concierge, is wrongly framed for murder at the
+                Grand Budapest Hotel. In the process of proving his innocence,
+                he befriends a lobby boy.
+                <br /><br /><br /><br />
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt2278388/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="images/getout.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Get Out</h5>
+              <p class="card-text">
+                <br />
+                Chris, an African-American man, decides to visit his Caucasian
+                girlfriend's parents during a weekend getaway. Although they
+                seem normal at first, he is not prepared to experience the
+                horrors ahead.
+                <br /><br /><br />
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt5052448/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/midsommar.jpg"
+              height="287"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Midsommar</h5>
+              <p class="card-text">
+                <br />
+                A couple travel to Sweden to visit their friend's rural hometown
+                for its fabled midsummer festival, but what begins as an idyllic
+                retreat quickly devolves into an increasingly violent and
+                bizarre competition at the hands of a pagan cult.
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt8772262/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Documentaries</h3>
+      <div class="row documentary-cards">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/Social_dilemma_xlg.jpg"
+              class="card-img-top"
+              alt="..."
+              height="282"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Social Dilemma</h5>
+              <p class="card-text">
+                This documentary-drama hybrid explores the dangerous human
+                impact of social networking, with tech experts sounding the
+                alarm on their own creations.
+                <br /><br />
+              </p>
+              <a
+                href="https://www.netflix.com/in/title/81254224?source=35"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/lastdance.jpg"
+              class="card-img-top"
+              alt="..."
+              height="282"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Last Dance</h5>
+              <p class="card-text">
+                This docuseries chronicles the rise of superstar Michael Jordan
+                and the 1990s Chicago Bulls, with unaired footage from an
+                unforgettable 1997-98 season.
+                <br /><br />
+              </p>
+              <a
+                href="https://www.netflix.com/in/title/80203144?source=35"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/OJ_Made_in_America.png"
+              class="card-img-top"
+              alt="..."
+              height="282"
+            />
+            <div class="card-body">
+              <h5 class="card-title">OJ Made in America</h5>
+              <p class="card-text">
+                A chronicle of the rise and fall of O.J. Simpson, whose
+                high-profile murder trial exposed the extent of American racial
+                tensions, revealing a fractured and divided nation.
+              </p>
+              <a
+                href="https://www.imdb.com/title/tt5275892/"
+                class="btn btn-primary"
+                target="_blank"
+                >check</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
     </div>
 
     <!-- FOOTER SECTION -->
@@ -292,6 +643,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="src/movie-bg.js"></script>
+    <script src="movie-bundle.js"></script>
   </body>
 </html>

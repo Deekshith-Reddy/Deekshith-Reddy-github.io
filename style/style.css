@@ -24,7 +24,7 @@ a {
   font-family: "Bungee", cursive;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   #navigation {
     background-color: white;
     margin-top: 3%;
@@ -121,7 +121,7 @@ a {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   body {
     width: min-content;
   }
