@@ -125,6 +125,20 @@ h3 {
     top: 15%;
   }
 
+  #canva-art2 {
+    position: absolute;
+    width: 85%;
+    height: 5%;
+    z-index: -1;
+  }
+
+  .info p {
+    padding: 3% 20% 0% 3%;
+    font-weight: bold;
+    margin: 15% 0 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
   .heading {
     position: relative;
     z-index: 1;
